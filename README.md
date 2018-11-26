@@ -11,6 +11,8 @@ This project comes with a minimal scaffold based on the baseline React applicati
 
 ![React Chat Log demo](./images/react-chatlog-demo.gif)
 
+**This project does not require a Pull Request.**
+
 ## Baseline
 Examine the JSON file located at `src/data/messages.json` to familiarize yourself with the data you will be using.
 
