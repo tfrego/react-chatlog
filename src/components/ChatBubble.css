@@ -19,7 +19,7 @@
 
 
 /* Chat bubble arrow styling */
-/*.entry-bubble:before{
+.entry-bubble:before{
   content: ' ';
   position: relative;
   width: 0;
@@ -30,7 +30,7 @@
   bottom: auto;
 
   border: 22px solid;
-}*/
+}
 
 
 .entry-body {

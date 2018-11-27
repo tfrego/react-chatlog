@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 
 const ChatEntry = (props) => {
   return (
-    <section className="chat-entry">
+    <section className={props.name === props.local ? "chat-entry local" : "chat-entry remote"}>
       <div className="entry-name">{props.name}</div>
       <div><ChatBubble body={props.message} timeStamp={props.timeStamp} /></div>
     </section>
@@ -13,6 +13,7 @@ const ChatEntry = (props) => {
 };
 
 ChatEntry.propTypes = {
+  local: PropTypes.string,
   name: PropTypes.string,
   message:  PropTypes.string,
   timeStamp:  PropTypes.string

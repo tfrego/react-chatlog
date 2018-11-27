@@ -7,9 +7,11 @@ const ChatLog = (props) => {
 
   const chatComponents = props.messages.map((message, i) => {
     return <ChatEntry
+    local={props.local}
     name={message.sender}
     message={message.body}
     timeStamp={message.timeStamp}
+    key={i}
     />
   });
 

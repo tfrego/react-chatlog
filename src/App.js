@@ -6,14 +6,16 @@ import chatMessages from './data/messages.json';
 class App extends Component {
   render() {
     console.log(chatMessages);
+    const local = chatMessages[0]["sender"]
+    const remote = chatMessages[1]["sender"]
 
     return (
       <div className="App">
         <header className="App-header">
-          <h1 className="App-title">Application title</h1>
+          <h1 className="App-title">Chat between {local} and {remote}</h1>
         </header>
         <main className="App-main">
-          <ChatLog messages={chatMessages} />
+          <ChatLog messages={chatMessages} local={local} />
         </main>
       </div>
     );
